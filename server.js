@@ -113,10 +113,4 @@ const app = (req, res) => {
 }
 
 const server = http.createServer(app)
-server.listen(8000)
-
-
-
-
-
-
+server.listen(process.env.PORT || 8000)
